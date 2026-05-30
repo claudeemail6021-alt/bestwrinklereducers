@@ -23,6 +23,6 @@ export function formatDate(dateStr: string): string {
 
 /** Build an Amazon affiliate link. Tag comes from env or falls back to placeholder. */
 export function amazonLink(asin: string): string {
-  const tag = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "YOURTAG-20";
+  const tag = "asotv068-20";
   return `https://www.amazon.com/dp/${asin}?tag=${tag}`;
 }

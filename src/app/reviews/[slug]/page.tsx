@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 function amazonUrl(asin: string) {
-  const tag = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "YOURTAG-20";
+  const tag = "asotv068-20";
   return `https://www.amazon.com/dp/${asin}?tag=${tag}`;
 }
 
