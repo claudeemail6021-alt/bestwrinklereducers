@@ -66,8 +66,7 @@ export const metadata: Metadata = {
   other: {
     "google-adsense-account": "ca-pub-3024315445700130",
   },
-  // ← Add GSC verification code here after Search Console setup:
-  // verification: { google: "YOUR_GSC_CODE" },
+  verification: { google: "wWxUJKO7_5badfwWP3Zw7M3MK_NrT5ycEgwAbOeCnqc" },
 };
 
 export default function RootLayout({
@@ -96,15 +95,17 @@ export default function RootLayout({
           gtag('js', new Date());
           gtag('config', 'AW-18184715619');
         `}</Script>
-        {/* Google Analytics 4 — replace G-XXXXXXXXXX with your Measurement ID */}
-        {/* To get your ID: analytics.google.com → Admin → Create Property → bestwrinklereducers.com */}
-        {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX" strategy="afterInteractive" /> */}
-        {/* <Script id="ga4-init" strategy="afterInteractive">{`
+        {/* Google Analytics 4 */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-G0NY9GTNBP"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
-        `}</Script> */}
+          gtag('config', 'G-G0NY9GTNBP');
+        `}</Script>
       </head>
       <body className="min-h-screen flex flex-col bg-cream-50 antialiased">
         <Header />
