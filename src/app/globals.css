@@ -1,0 +1,169 @@
+/* ─── Google Fonts — must come before @tailwind directives ─── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: 'Inter', system-ui, sans-serif;
+  --font-playfair: 'Playfair Display', Georgia, serif;
+}
+
+/* ─── Base ─── */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FDFAF6;
+  color: #1A1A1A;
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ─── Typography ─── */
+h1, h2, h3 {
+  font-family: var(--font-playfair);
+  line-height: 1.2;
+}
+
+h4, h5, h6 {
+  font-family: var(--font-inter);
+  font-weight: 600;
+}
+
+/* ─── Prose (for blog MDX content) ─── */
+.prose {
+  color: #374151;
+  max-width: 72ch;
+}
+
+.prose h1 {
+  font-family: var(--font-playfair);
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1A1A1A;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.prose h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #1A1A1A;
+  margin-bottom: 0.75rem;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #F2D9C0;
+}
+
+.prose h3 {
+  font-family: var(--font-inter);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #262626;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+.prose p {
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.prose ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose li {
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+
+.prose strong {
+  color: #1A1A1A;
+  font-weight: 600;
+}
+
+.prose a {
+  color: #C94F30;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  color: #E26847;
+}
+
+.prose blockquote {
+  border-left: 4px solid #F2D9C0;
+  padding-left: 1rem;
+  color: #525252;
+  font-style: italic;
+  margin: 1.5rem 0;
+}
+
+.prose table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+.prose th {
+  background-color: #FBF4EC;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  border: 1px solid #F2D9C0;
+}
+
+.prose td {
+  padding: 0.75rem 1rem;
+  border: 1px solid #E5E5E5;
+}
+
+.prose tr:nth-child(even) td {
+  background-color: #FDFAF6;
+}
+
+/* ─── Utility classes ─── */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.container-custom {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* ─── Gold shimmer for rating stars ─── */
+.star-filled {
+  color: #E1B82E;
+}
+
+.star-empty {
+  color: #D4D4D4;
+}
+
+/* ─── Affiliate button pulse ─── */
+@keyframes softPulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(226, 104, 71, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(226, 104, 71, 0); }
+}
+
+.btn-affiliate-pulse {
+  animation: softPulse 2.5s ease-in-out infinite;
+}
