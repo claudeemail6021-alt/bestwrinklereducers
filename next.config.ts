@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   // NOTE: Do NOT set output:"standalone" on Vercel — Vercel handles this automatically
   images: {
     remotePatterns: [

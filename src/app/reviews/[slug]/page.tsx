@@ -23,8 +23,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const product = getProductBySlug(slug);
   if (!product) return { title: "Product Not Found" };
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bestwrinklereducers.com";
-
   return {
     title: `${product.brand} ${product.name} Review 2026 — Does It Actually Work?`,
     description: `Honest, in-depth review of ${product.brand} ${product.name}. Ingredient breakdown, pros & cons, who it's for, and where to buy. Updated for 2026.`,
