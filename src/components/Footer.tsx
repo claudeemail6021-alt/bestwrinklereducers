@@ -38,7 +38,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold text-sm mb-4 uppercase tracking-wide">Top Reviews</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link href="/reviews/murad-retinal-resculpt-cream" className="hover:text-white transition-colors">Murad Retinal Cream</Link></li>
+              <li><Link href="/reviews/murad-retinol-youth-renewal-serum" className="hover:text-white transition-colors">Murad Retinol Serum</Link></li>
               <li><Link href="/reviews/dr-dennis-gross-retinol-ferulic" className="hover:text-white transition-colors">Dr. Dennis Gross Retinol</Link></li>
               <li><Link href="/reviews/olay-regenerist-micro-sculpting-cream" className="hover:text-white transition-colors">Olay Regenerist</Link></li>
               <li><Link href="/reviews/neutrogena-rapid-wrinkle-repair" className="hover:text-white transition-colors">Neutrogena Rapid Repair</Link></li>

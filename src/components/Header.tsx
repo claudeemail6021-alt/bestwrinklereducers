@@ -6,7 +6,7 @@ import { Menu, X, Sparkles } from "lucide-react";
 
 const navLinks = [
   { label: "Top 10 Picks", href: "/top-10" },
-  { label: "Reviews", href: "/reviews/murad-retinal-resculpt-cream" },
+  { label: "Reviews", href: "/reviews/murad-retinol-youth-renewal-serum" },
   { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
 ];
