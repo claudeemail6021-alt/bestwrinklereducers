@@ -9,7 +9,7 @@ interface ProductCardProps {
 }
 
 function amazonUrl(asin: string) {
-  const tag = process.env.NEXT_PUBLIC_AMAZON_TAG ?? "YOURTAG-20";
+  const tag = "asotv068-20";
   return `https://www.amazon.com/dp/${asin}?tag=${tag}`;
 }
 
@@ -22,13 +22,11 @@ export default function ProductCard({ product, showDetails = false }: ProductCar
           #{product.rank}
         </div>
         <div className="h-48 bg-cream-100 flex items-center justify-center overflow-hidden">
-          {/* Replace imageUrl in products.ts with real product images */}
-          <div className="flex flex-col items-center justify-center text-neutral-300 gap-2">
-            <div className="w-20 h-20 rounded-full bg-cream-200 flex items-center justify-center">
-              <span className="text-2xl">✦</span>
-            </div>
-            <span className="text-xs font-medium text-neutral-400">{product.brand}</span>
-          </div>
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            className="w-full h-full object-contain p-4"
+          />
         </div>
       </div>
 
