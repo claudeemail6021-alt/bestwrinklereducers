@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="container-custom text-center">
           <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-blush-600 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 shadow-sm">
             <Sparkles className="h-3.5 w-3.5" />
-            Updated for 2026 — 8 products tested
+            Updated for 2026 — 12 products tested
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-neutral-900 leading-tight mb-5">
             Best Wrinkle Reducers<br />
@@ -145,7 +145,7 @@ export default function HomePage() {
         <div className="container-custom">
           <div className="text-center mb-10">
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-neutral-900 mb-3">
-              Top 8 Anti-Aging Creams Compared
+              Top 12 Anti-Aging Creams Compared
             </h2>
             <p className="text-neutral-500 max-w-xl mx-auto">
               Ranked by ingredient efficacy, clinical evidence, user reviews, and value for money.
@@ -153,7 +153,7 @@ export default function HomePage() {
           </div>
           <AffiliateDisclosure compact />
           <div className="mt-4">
-            <ComparisonTable products={products} limit={8} />
+            <ComparisonTable products={products} limit={12} />
           </div>
           <div className="text-center mt-6">
             <Link
