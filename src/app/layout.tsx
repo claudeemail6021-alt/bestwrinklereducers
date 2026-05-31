@@ -78,12 +78,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
         {/* Google AdSense */}
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3024315445700130"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3024315445700130" crossOrigin="anonymous"></script>
         {/* Google Ads */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=AW-18184715619"
