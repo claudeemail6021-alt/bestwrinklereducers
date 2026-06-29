@@ -50,40 +50,24 @@ export default async function BlogPostPage({ params }: PageProps) {
     "@type": "Article",
     headline: frontmatter.title,
     description: frontmatter.description,
+    datePublished: frontmatter.date,
+    dateModified: frontmatter.date,
     author: {
       "@type": "Organization",
-      name: frontmatter.author,
+      name: frontmatter.author || "BestWrinkleReducers Editorial Team",
+      url: "https://bestwrinklereducers.com/about",
     },
     publisher: {
       "@type": "Organization",
       name: "BestWrinkleReducers.com",
-      url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.bestwrinklereducers.com",
+      url: "https://bestwrinklereducers.com",
+      logo: { "@type": "ImageObject", url: "https://bestwrinklereducers.com/og-default.png" },
     },
-    datePublished: frontmatter.date,
-    dateModified: frontmatter.date,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://bestwrinklereducers.com/blog/${slug}`,
+    },
     keywords: frontmatter.tags.join(", "),
-  };
-
-
-  const articleSchema = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": post.title,
-    "description": post.description,
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "author": {
-      "@type": "Organization",
-      "name": post.author || "BestWrinkleReducers Editorial Team",
-      "url": "https://bestwrinklereducers.com/about"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BestWrinkleReducers.com",
-      "url": "https://bestwrinklereducers.com",
-      "logo": { "@type": "ImageObject", "url": "https://bestwrinklereducers.com/og-default.png" }
-    },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://bestwrinklereducers.com/blog/${params.slug}` }
   };
 
   return (
@@ -106,12 +90,9 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </div>
 
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <article className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-
-            {/* Article header */}
             <header className="mb-8">
               <span className="inline-block text-xs font-semibold uppercase tracking-wider text-blush-500 mb-3">
                 {frontmatter.category}
@@ -138,12 +119,10 @@ export default async function BlogPostPage({ params }: PageProps) {
 
             <AffiliateDisclosure compact />
 
-            {/* MDX content */}
             <div className="prose mt-8">
               <MDXRemote source={content} />
             </div>
 
-            {/* Tags */}
             <div className="mt-10 pt-6 border-t border-cream-200">
               <div className="flex flex-wrap gap-2">
                 {frontmatter.tags.map((tag) => (
@@ -154,7 +133,6 @@ export default async function BlogPostPage({ params }: PageProps) {
               </div>
             </div>
 
-            {/* Back */}
             <div className="mt-8">
               <Link
                 href="/blog"
