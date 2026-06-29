@@ -64,6 +64,28 @@ export default async function BlogPostPage({ params }: PageProps) {
     keywords: frontmatter.tags.join(", "),
   };
 
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": post.title,
+    "description": post.description,
+    "datePublished": post.date,
+    "dateModified": post.date,
+    "author": {
+      "@type": "Organization",
+      "name": post.author || "BestWrinkleReducers Editorial Team",
+      "url": "https://bestwrinklereducers.com/about"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "BestWrinkleReducers.com",
+      "url": "https://bestwrinklereducers.com",
+      "logo": { "@type": "ImageObject", "url": "https://bestwrinklereducers.com/og-default.png" }
+    },
+    "mainEntityOfPage": { "@type": "WebPage", "@id": `https://bestwrinklereducers.com/blog/${params.slug}` }
+  };
+
   return (
     <>
       <script
@@ -84,6 +106,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </div>
 
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <article className="section-padding">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
