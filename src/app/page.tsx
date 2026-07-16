@@ -13,7 +13,7 @@ import { getAllBlogPosts } from "@/lib/mdx";
 export const metadata: Metadata = {
   title: "Best Wrinkle Reducers 2026 — Expert Anti-Aging Cream Reviews",
   description:
-    "Discover the best wrinkle reducers and anti-aging creams of 2026. Dermatologist-backed, independently reviewed. Compare retinol, retinal, and peptide creams to find your perfect match.",
+    "Discover the best wrinkle reducers and anti-aging creams of 2026. Independently reviewed using published ingredient science. Compare retinol, retinal, and peptide creams to find your match.",
   alternates: {
     canonical: "/",
   },
@@ -111,7 +111,7 @@ export default function HomePage() {
           </h1>
           <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto mb-8 leading-relaxed">
             We tested 40+ anti-aging creams so you don&apos;t have to.
-            Science-backed, dermatologist-reviewed picks ranked by real results.
+            Science-backed picks ranked by ingredient evidence and real user results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
