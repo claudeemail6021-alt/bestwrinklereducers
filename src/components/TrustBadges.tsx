@@ -3,8 +3,8 @@ import { ShieldCheck, Star, Award, Users } from "lucide-react";
 const badges = [
   {
     icon: ShieldCheck,
-    title: "Dermatologist Reviewed",
-    subtitle: "All picks vetted by licensed dermatologists",
+    title: "Evidence-Based",
+    subtitle: "Picks grounded in published ingredient science",
     color: "text-green-600",
     bg: "bg-green-50",
   },
@@ -24,8 +24,8 @@ const badges = [
   },
   {
     icon: Users,
-    title: "Community Trusted",
-    subtitle: "12,000+ subscribers trust our reviews",
+    title: "Reader Supported",
+    subtitle: "Affiliate commissions are our only revenue — no brand deals",
     color: "text-blue-500",
     bg: "bg-blue-50",
   },
