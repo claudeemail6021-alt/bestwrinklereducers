@@ -241,7 +241,7 @@ export const products: Product[] = [
     bestFor: "Retinol beginners, fine lines, uneven texture",
     pros: [
       "Most affordable retinol option on this list",
-      "Clinically proven results in 1 week",
+      "Brand claims clinically proven results in 1 week",
       "Available everywhere — CVS, Target, Amazon",
       "34,000+ verified reviews",
       "Great starting retinol for beginners",
@@ -639,12 +639,12 @@ export const products: Product[] = [
       {
         question: "What makes RoC better than generic retinol serums?",
         answer:
-          "RoC has over 65 years specifically studying retinol in skincare. Their mineral complex is clinically proven to enhance retinol's stability and effectiveness — generic serums often lack this supporting cast.",
+          "RoC has over 65 years specifically studying retinol in skincare. The brand claims their mineral complex enhances retinol's stability and effectiveness — generic serums often lack this supporting cast.",
       },
       {
         question: "How does this compare to the Neutrogena Rapid Wrinkle Repair?",
         answer:
-          "Both are excellent drugstore retinols. RoC's serum format is lighter and faster-absorbing. Neutrogena's Accelerated SA technology may be more beginner-friendly. Both deliver clinically proven results.",
+          "Both are excellent drugstore retinols. RoC's serum format is lighter and faster-absorbing. Neutrogena's Accelerated SA technology may be more beginner-friendly. Both are widely reviewed drugstore retinol options.",
       },
     ],
     featured: false,
