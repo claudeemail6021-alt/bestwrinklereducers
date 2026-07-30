@@ -33,7 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
-      url: `${siteUrl}/methodology`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.5,
