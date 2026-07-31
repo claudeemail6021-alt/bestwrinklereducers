@@ -11,9 +11,9 @@ import { getFeaturedProducts } from "@/data/products";
 import { getAllBlogPosts } from "@/lib/mdx";
 
 export const metadata: Metadata = {
-  title: "Best Wrinkle Reducers 2026 — Expert Anti-Aging Cream Reviews",
+  title: "Wrinkle Reducers 2026 — Compare Popular Anti-Aging Products",
   description:
-    "Discover the best wrinkle reducers and anti-aging creams of 2026. Independently reviewed using published ingredient science. Compare retinol, retinal, and peptide creams to find your match.",
+    "Discover the best wrinkle reducers and anti-aging creams of 2026. Compare popular anti-aging products. Compare retinol, retinal, and peptide creams to find your match.",
   alternates: {
     canonical: "/",
   },
