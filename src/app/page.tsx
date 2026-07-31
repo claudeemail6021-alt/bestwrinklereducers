@@ -174,8 +174,7 @@ export default function HomePage() {
               Why These Ingredients Actually Work
             </h2>
             <p className="text-neutral-500 max-w-2xl mx-auto">
-              Every product on our list is chosen for one reason: clinically proven ingredients at
-              effective concentrations. Here&apos;s what to look for and why.
+              This site covers products built around well-documented active ingredients — retinol, vitamin C, niacinamide, and peptides. Here&apos;s what to look for and why.
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
