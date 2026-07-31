@@ -32,7 +32,7 @@ const ingredients = [
     icon: FlaskConical,
     name: "Retinol",
     description:
-      "The OG anti-ager. Clinically proven to increase collagen synthesis and accelerate cell turnover at concentrations from 0.025% to 1%.",
+      "The OG anti-ager. Published research shows retinol increases collagen synthesis and accelerates cell turnover at concentrations from 0.025% to 1%.",
     color: "text-blush-500",
     bg: "bg-blush-50",
   },
