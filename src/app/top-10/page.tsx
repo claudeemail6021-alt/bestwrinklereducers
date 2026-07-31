@@ -60,7 +60,7 @@ export default function Top10Page() {
           </h1>
           <p className="text-lg text-neutral-600 max-w-2xl mx-auto">
             Ranked by clinical evidence, ingredient quality, user satisfaction, and value. Every pick
-            is independently reviewed — never paid for placement.
+            is listed based on customer ratings and popularity — never paid for placement.
           </p>
         </div>
       </section>
@@ -172,10 +172,7 @@ export default function Top10Page() {
           {/* Disclaimer */}
           <div className="mt-12 bg-cream-100 rounded-2xl p-6">
             <p className="text-sm text-neutral-600 leading-relaxed">
-              <strong>Our Methodology:</strong> Rankings are determined by a scoring rubric that weighs clinical evidence
-              (40%), ingredient quality and concentration (30%), verified user reviews (20%), and value for money (10%).
-              No brand has paid for placement. We earn a commission if you purchase through affiliate links — this never
-              influences our rankings.
+              Products are listed based on popularity and customer ratings. No brand has paid for placement. We earn a commission if you purchase through affiliate links.
             </p>
           </div>
         </div>
