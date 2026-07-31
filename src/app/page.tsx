@@ -110,7 +110,7 @@ export default function HomePage() {
             <span className="text-blush-500">of 2026</span>
           </h1>
           <p className="text-lg md:text-xl text-neutral-600 max-w-2xl mx-auto mb-8 leading-relaxed">
-            We researched 40+ anti-aging creams so you don&apos;t have to.
+            40+ popular anti-aging creams, compared.
             Science-backed picks ranked by ingredient evidence and real user results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
