@@ -1,3 +1,4 @@
+import AdUnit from "@/components/AdUnit";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, XCircle, ShoppingCart, ArrowRight } from "lucide-react";
@@ -179,6 +180,8 @@ export default function Top10Page() {
       </section>
 
 
+
+      <div className="container-custom max-w-4xl py-2"><AdUnit slot="6716942384" /></div>
       {/* Buying Guide */}
       <section className="section-padding bg-cream-50">
         <div className="container-custom max-w-4xl">
