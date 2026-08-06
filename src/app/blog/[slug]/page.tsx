@@ -7,6 +7,7 @@ import { getAllBlogSlugs, getBlogPost } from "@/lib/mdx";
 import { formatDate } from "@/lib/utils";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import NewsletterSignup from "@/components/NewsletterSignup";
+import AdUnit from "@/components/AdUnit";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -123,6 +124,8 @@ export default async function BlogPostPage({ params }: PageProps) {
               <MDXRemote source={content} />
             </div>
 
+
+            <AdUnit slot="6716942384" className="mt-8" />
             <div className="mt-10 pt-6 border-t border-cream-200">
               <div className="flex flex-wrap gap-2">
                 {frontmatter.tags.map((tag) => (
