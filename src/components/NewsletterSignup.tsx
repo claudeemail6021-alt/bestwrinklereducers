@@ -22,8 +22,8 @@ export default function NewsletterSignup() {
           Get Skincare Picks in Your Inbox
         </h2>
         <p className="text-neutral-600 mb-6 leading-relaxed">
-          Join 12,000+ readers who get our weekly roundup of the best new anti-aging launches,
-          expert tips, and exclusive deals. No spam, ever.
+          Get our weekly roundup of the best new anti-aging launches,
+          research-backed tips, and exclusive deals. No spam, ever.
         </p>
         {submitted ? (
           <div className="flex items-center justify-center gap-2 text-green-700 font-semibold">
