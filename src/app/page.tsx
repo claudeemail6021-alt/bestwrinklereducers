@@ -103,7 +103,7 @@ export default function HomePage() {
         <div className="container-custom text-center">
           <div className="inline-flex items-center gap-2 bg-white/70 backdrop-blur-sm text-blush-600 text-xs font-semibold px-3 py-1.5 rounded-full mb-6 shadow-sm">
             <Sparkles className="h-3.5 w-3.5" />
-            Updated for 2026 — 12 products tested
+            Updated for 2026
           </div>
           <h1 className="font-serif text-4xl md:text-6xl font-bold text-neutral-900 leading-tight mb-5">
             Best Wrinkle Reducers<br />
