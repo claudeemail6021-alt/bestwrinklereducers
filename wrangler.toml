@@ -6,3 +6,4 @@ main = ".vercel/output/static/_worker.js"
 [assets]
 directory = ".vercel/output/static"
 binding = "ASSETS"
+# Redeploy trigger: 2026-08-10 20:27 UTC — corrected Cloudflare account
